@@ -18,6 +18,8 @@ ul {
     justify-content: center;
     padding-left: 0;
     margin: 10px;
+    margin-bottom: 50px;
+    margin-top: 20px;
 }
     
 li a {
@@ -49,12 +51,13 @@ li a:hover {
 
 body {
   background-size: 100% 100%;
-  height: 100vh;
+  height: 120vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Yeseva One";
+  font-family: 'Yeseva One';
   flex-direction: column;
+  margin-top: 0px;
 }
 .center {
   width: 600px;
@@ -88,4 +91,8 @@ section:target p {
   height: 12em;
   opacity: 1;
   padding: 10px;
+}
+
+body{
+  background-image: url(Group\ 1.png);
 }
