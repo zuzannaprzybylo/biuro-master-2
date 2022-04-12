@@ -40,7 +40,6 @@ li a:hover {
   border: 1px solid #a7c5d4;
 }
 
-
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&display=swap");
 * {
   margin: 0;
@@ -63,14 +62,13 @@ body {
 .center {
   width: 600px;
   margin: auto;
-  
 }
 section a {
   background: #fff;
   color: #a7c5d4;
   text-decoration: none;
   text-align: center;
-  padding: 5px;
+  padding: 10px;
   display: block;
   box-sizing: border-box;
   font-family: 'Yeseva One';
@@ -97,7 +95,6 @@ section:target p {
   opacity: 1;
   padding: 10px;
 }
-
 body{
   background-image: url(Group\ 1.png);
 }

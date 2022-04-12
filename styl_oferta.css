@@ -5,40 +5,40 @@ body{
     font-size: 20px;
 }
 .logo{
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    padding-top: 30px;
-    padding-bottom: 0;
-    display: flex;
-    margin-bottom: 0;
-    flex-direction: column;
+  width: 100%;
+   height: 100%;
+  padding: 0;
+  padding-top: 30px;
+  padding-bottom: 0;
+  display: flex;
+  margin-bottom: 0;
+  flex-direction: column;
 }
 ul {
-    float: left;
-    width: 100%;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding-left: 0;
-    margin-bottom: 0;
+  float: left;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin-bottom: 0;
 }   
 li a {
-    display: block;
-    float: left;
-    text-align: center;
-    font-size: 25px;
-    width: 20px;
-    width: auto;
-    text-decoration: none;
-    color: #a7c5d4;
-    background-color: #ffffff00;
-    padding: 10px 50px;
+  display: block;
+  float: left;
+  text-align: center;
+  font-size: 25px;
+  width: 20px;
+  width: auto;
+  text-decoration: none;
+  color: #a7c5d4;
+  background-color: #ffffff00;
+  padding: 10px 50px;
 }
 li a:hover {
-    color: #a7c5d4;
-    background: white;
-    border: 1px solid #a7c5d4;
+  color: #a7c5d4;
+  background: white;
+  border: 1px solid #a7c5d4;
 }
 
 *,
@@ -74,70 +74,88 @@ body {
   right: 0;
   bottom: 0;
   background-position: 50% 50%;
+  background-size: cover;
 }
 .crd-info {
-  color: hsl(0, 0%, 90%);
+  color: white;
   position: absolute;
-  bottom: 40px;
-  left: 30px;
+  bottom: 50px;
+  right: 30px;
+  
 }
 .crd-heading {
-  font-size: 4rem;
+  font-size: 40px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  opacity: .8;
-  font-weight: 900;
-}
-.crd-text {
-  font-size: 1.6rem;
-  opacity: .6;
-  padding-left: 1rem;
 }
 
 /* effect-1 */
+.crd--effect-1 .crd-heading {
+  position: relative;
+  color: white;
+}
+.crd--effect-1 .crd-heading span {
+  color: white;
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  transform: scale(1.4);
+  transition: .5s;
+}
+.crd--effect-1:hover .crd-heading span {
+  opacity: 1;
+  transform: scale(1);
+}
+.crd--effect-1 .crd-info {
+  text-align: right;
+  right: 30px;
+  left: unset;
+}
 .crd--effect-1 .crd-img {
-  transform: scale(.9);
-  transition: .4s;
+  transition: .5s;
 }
 .crd--effect-1:hover .crd-img {
-  transform: scale(1);
+  transform: scale(.95);
 }
 
 /* effect-2 */
-.crd--effect-2 .crd-info {
-  top: 50%;
-  left: 50%;
-  bottom: unset;
-  text-align: center;
-  transform: translate(-50%, -50%);
-}
 .crd--effect-2 .crd-heading {
-  transform: scale(2);
+  position: relative;
+  color: white;
+}
+.crd--effect-2 .crd-heading span {
+  color: white;
+  position: absolute;
+  right: 0;
+  top: 0;
   opacity: 0;
+  transform: scale(1.4);
   transition: .5s;
 }
-.crd--effect-2 .crd-text {
-  padding-left: 0;
-  transform: scale(1.2);
-  opacity: 0;
-  transition: .4s;
-}
-.crd--effect-2:hover .crd-heading {
-  opacity: .8;
+.crd--effect-2:hover .crd-heading span {
+  opacity: 1;
   transform: scale(1);
 }
-.crd--effect-2:hover .crd-text {
-  opacity: .6;
-  transform: scale(1);
+.crd--effect-2 .crd-info {
+  text-align: right;
+  right: 30px;
+  left: unset;
+}
+.crd--effect-2 .crd-img {
+  transition: .5s;
+}
+.crd--effect-2:hover .crd-img {
+  transform: scale(.95);
 }
 
 /* effect-3 */
 .crd--effect-3 .crd-heading {
   position: relative;
-  color: hsla(0, 0%, 90%, .5);
+  color: white;
 }
 .crd--effect-3 .crd-heading span {
-  color: hsl(0, 0%, 90%);
+  color: white;
   position: absolute;
   right: 0;
   top: 0;
@@ -154,15 +172,11 @@ body {
   right: 30px;
   left: unset;
 }
-.crd--effect-3 .crd-text {
-  padding-left: 0;
-  padding-right: 1rem;
-}
 .crd--effect-3 .crd-img {
   transition: .5s;
 }
 .crd--effect-3:hover .crd-img {
-  transform: scale(.9);
+  transform: scale(.95);
 }
 
 /* effect-4 */
@@ -172,22 +186,11 @@ body {
   max-width: 100rem;
 }
 .crd--effect-4 .crd-img {
-  transition: .8s;
+  transition: .95s;
 }
 .crd--effect-4:hover .crd-img {
-  filter: saturate(0);
+  transform: scale(0.95);
 }
 .crd--effect-4 .crd-heading {
   transition: .9s;
-}
-.crd--effect-4:hover .crd-heading {
-  color: #a7c5d4;
-}
-
-.abs-site-link {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  color: hsla(0, 0%, 100%, .3);
-  font-size: 16px;
 }
