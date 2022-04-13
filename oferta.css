@@ -21,7 +21,7 @@ ul {
   display: flex;
   justify-content: center;
   padding-left: 0;
-  margin-bottom: 0;
+  margin: 10px;
 }   
 li a {
   display: block;
@@ -193,4 +193,94 @@ body {
 }
 .crd--effect-4 .crd-heading {
   transition: .9s;
+}
+
+/* effect-5 */
+.crd--effect-5 .crd-heading {
+  position: relative;
+  color: white;
+}
+.crd--effect-5 .crd-heading span {
+  color: white;
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  transform: scale(1.4);
+  transition: .5s;
+}
+.crd--effect-5:hover .crd-heading span {
+  opacity: 1;
+  transform: scale(1);
+}
+.crd--effect-5 .crd-info {
+  text-align: right;
+  right: 30px;
+  left: unset;
+}
+.crd--effect-5 .crd-img {
+  transition: .5s;
+}
+.crd--effect-5:hover .crd-img {
+  transform: scale(.95);
+}
+
+/* effect-6 */
+.crd--effect-6 .crd-heading {
+  position: relative;
+  color: white;
+}
+.crd--effect-6 .crd-heading span {
+  color: white;
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  transform: scale(1.4);
+  transition: .5s;
+}
+.crd--effect-6:hover .crd-heading span {
+  opacity: 1;
+  transform: scale(1);
+}
+.crd--effect-6 .crd-info {
+  text-align: right;
+  right: 30px;
+  left: unset;
+}
+.crd--effect-6 .crd-img {
+  transition: .5s;
+}
+.crd--effect-6:hover .crd-img {
+  transform: scale(.95);
+}
+
+/* effect-7 */
+.crd--effect-7 .crd-heading {
+  position: relative;
+  color: white;
+}
+.crd--effect-7 .crd-heading span {
+  color: white;
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  transform: scale(1.4);
+  transition: .5s;
+}
+.crd--effect-7:hover .crd-heading span {
+  opacity: 1;
+  transform: scale(1);
+}
+.crd--effect-7 .crd-info {
+  text-align: right;
+  right: 30px;
+  left: unset;
+}
+.crd--effect-7 .crd-img {
+  transition: .5s;
+}
+.crd--effect-7:hover .crd-img {
+  transform: scale(.95);
 }
