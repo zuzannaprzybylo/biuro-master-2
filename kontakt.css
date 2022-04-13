@@ -26,6 +26,17 @@ ul {
     margin-bottom: 0;
 }
     
+ul {
+    float: left;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin: 10px;
+    padding-top: 10px;
+}
+    
 li a {
     display: block;
     float: left;
@@ -36,11 +47,16 @@ li a {
     text-decoration: none;
     color: #a7c5d4;
     background-color: #ffffff00;
-    padding: 10px 50px;
+    padding: 5px 30px;
 }
-    
+
 li a:hover {
+    background-color: #a7c5d4;
+    color: white;
+    transform: translateY(-5px) scale(1.05);
+}
+li a:active {
+    background-color: transparent;
     color: #a7c5d4;
-    background: white;
-    border: 1px solid #a7c5d4;
+    transform: translateY(5px) scale(0.95);
 }
