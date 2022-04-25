@@ -5,8 +5,9 @@ body{
     font-size: 20px;
 }
 .logo{
+  position: inherit;
   width: 100%;
-   height: 100%;
+  height: 100%;
   padding: 0;
   padding-top: 30px;
   padding-bottom: 0;
@@ -23,18 +24,9 @@ ul {
   padding-left: 0;
   margin: 10px;
 }   
-ul {
-  float: left;
-  width: 100%;
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  padding-left: 0;
-  margin: 10px;
-  padding-top: 10px;
-}
   
 li a {
+  position: sticky;
     display: block;
     float: left;
     text-align: center;

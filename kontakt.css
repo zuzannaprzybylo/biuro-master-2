@@ -14,6 +14,7 @@ body{
     display: flex;
     margin-bottom: 0;
     flex-direction: column;
+    position: sticky;
 }
 
 ul {
@@ -60,3 +61,4 @@ li a:active {
     color: #a7c5d4;
     transform: translateY(5px) scale(0.95);
 }
+
